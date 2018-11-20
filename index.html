@@ -28,15 +28,15 @@
 				<h1 class="subtitle is-3">Seja um Colaborador</h1>
 			</section>
 		</section>
-		<section class="tabs">
+		<nav class="tabs">
 			<ul>
 				<li v-for="x in menu" :class="x.classe"><a :href="'#' + x.nome " @click="clickpagina(x.nome)" v-text="x.pagina"></a></li>
 				<li><a @click="abrir">Blog GAMA</a></li>
 			</ul>
-		</section>
-		<section class="navbar">
-			<section class="navbar-brand">
-				<section :class="dropdown">
+		</nav>
+			<nav class="navbar">
+				<section class="navbar-brand">
+					<section :class="dropdown">
 						<section class="dropdown-trigger">
 							<button class="button navbar-burger" aria-haspopup="true" aria-controls="dropdown-menu4" @click="ativadw" >
 								<span></span>
@@ -60,7 +60,7 @@
 						{{pgNm}}
 					</h1>
 				</section>
-			</section>
+			</nav>
 		</header>
 		<section class="pagina" id="home" v-show="pg === 'home'">
 			<h1 class="title is-2">Bem Vindo ao Gama</h1>
